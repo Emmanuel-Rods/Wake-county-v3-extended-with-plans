@@ -7,6 +7,8 @@ const get_holds = require("../apis/holds.js");
 const get_inspection = require("../apis/inspection.js");
 const get_permit = require("../apis/permit.js");
 const get_summary = require("../apis/summary.js");
+const get_location = require("../apis/location.js");
+const get_plans = require("../apis/plan.js");
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -28,9 +30,13 @@ async function fetchNewPermits(file, outputFolder = "permits", base) {
     console.log(`Loaded ${permits.length} cases. Starting data extraction...`);
 
     for (const permitCase of permits) {
-      const CaseId = permitCase.permit_id || permitCase.CaseId;
+      const CaseId =
+        permitCase.permit_id || permitCase.CaseId || permitCase.record_id;
       // Try to get permit_number, if not there, fallback to CaseNumber
-      const CaseNumber = permitCase.permit_number || permitCase.CaseNumber;
+      const CaseNumber =
+        permitCase.permit_number ||
+        permitCase.CaseNumber ||
+        permitCase.record_number;
 
       if (!CaseId || !CaseNumber) {
         console.warn("Skipping record due to missing CaseId or CaseNumber.");
@@ -40,20 +46,20 @@ async function fetchNewPermits(file, outputFolder = "permits", base) {
       console.log(`Processing Case: ${CaseNumber} (${CaseId})...`);
 
       try {
-        const [contacts, inspections, permit, summary] = await Promise.all([
+        const [contacts, plan, summary, location] = await Promise.all([
           get_contacts(CaseId, base).catch((err) => ({
             error: true,
             message: err.message,
           })),
-          get_inspection(CaseId, base).catch((err) => ({
-            error: true,
-            message: err.message,
-          })),
-          get_permit(CaseId, base).catch((err) => ({
+          get_plans(CaseId, base).catch((err) => ({
             error: true,
             message: err.message,
           })),
           get_summary(CaseId, base).catch((err) => ({
+            error: true,
+            message: err.message,
+          })),
+          get_location(CaseId, base).catch((err) => ({
             error: true,
             message: err.message,
           })),
@@ -63,9 +69,9 @@ async function fetchNewPermits(file, outputFolder = "permits", base) {
         const consolidatedData = {
           metadata: permitCase, // Optional: keeps original file values alongside details
           contacts,
-          inspections,
-          permit,
+          plan,
           summary,
+          location,
         };
 
         // Sanitize CaseNumber to ensure valid filesystem filename
