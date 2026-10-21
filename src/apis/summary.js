@@ -5,7 +5,7 @@
  * @param {number|string} moduleId - The module ID (defaults to 1).
  * @returns {Promise<Object>} - The JSON response from the API.
  */
-async function get_summary(entityId, base, moduleId = 1) {
+async function get_summary(entityId, base, moduleId = 2) {
   // Construct the URL dynamically using the provided IDs
   const url = `${base}/selfservice/api/energov/workflow/summary/activities/${moduleId}/${entityId}`;
 

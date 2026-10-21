@@ -44,7 +44,7 @@ async function get_contacts(
     PageSize: 100,
     SortField: "",
     IsSortedInAscendingOrder: true,
-    ModuleId: 1,
+    ModuleId: 2,
     EntityId: entityId,
     ...options,
   };

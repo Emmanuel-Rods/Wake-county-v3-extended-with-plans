@@ -40,7 +40,7 @@ async function get_fees(entityId, base, options = {}) {
     PageSize: 100,
     SortField: "",
     IsSortedInAscendingOrder: true,
-    ModuleId: 1,
+    ModuleId: 2,
     EntityId: entityId,
     IsRemainingFee: false,
     ...options,

@@ -6,7 +6,7 @@
  * @returns {Promise<Object>} - The JSON response from the API.
  */
 
-async function get_permit(entityId, base, moduleId = 1) {
+async function get_permit(entityId, base, moduleId = 2) {
   const url = `${base}/selfservice/api/energov/permits/permitdetail`;
 
   const headers = {
