@@ -49,7 +49,7 @@ async function compareData(OLD_DATA_FILE, NEW_FOLDER, DIFF_FOLDER) {
 
     // Map using the top-level permit_id from the old data array
     for (const record of oldDataArray) {
-      const key = record.permit_id || record.permit_number;
+      const key = record.permit_id || record.permit_number || record.record_id;
       if (key) {
         oldDataMap.set(key, record);
       }
@@ -88,7 +88,9 @@ async function compareData(OLD_DATA_FILE, NEW_FOLDER, DIFF_FOLDER) {
 
       // EXTRACT ID FROM NEW DATA: Look inside the "permit" object
       const recordKey =
-        newJson.permit?.PermitId || newJson.permit?.PermitNumber;
+        newJson.permit?.PermitId ||
+        newJson.permit?.PermitNumber ||
+        newJson.permit?.record_number;
 
       if (!recordKey) {
         recordLog(
