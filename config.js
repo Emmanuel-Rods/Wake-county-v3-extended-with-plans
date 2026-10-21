@@ -1,26 +1,15 @@
 const base = "https://wakecountync-energovpub.tylerhost.net/apps"; // No trailing slash
 
-const dateOffset = 1; // 1 = yesterday
+const dateOffset = 200; // 1 = yesterday
 
 // statuses that need to pulled using daily.js
-const requiredStatuses = [
-  "Issued",
-  "In Review",
-  "On Hold",
-  "Pending Approval",
-  "Submitted",
-];
+const requiredStatuses = ["Complete"];
 
 // permit types
-const requiredSecondaryData = [
-  "Residential - New One- and Two-Family Dwelling",
-  "Commercial New Multi Family",
-  "Commercial New Building or Addition",
-  "Residential Addition",
-];
+const requiredSecondaryData = ["Land Use Permit - Simple"];
 
 //status that need be updated
-const updateStatuses = ["Issued"];
+const updateStatuses = ["Complete"];
 
 // exports
 module.exports = {
