@@ -1,0 +1,105 @@
+{
+    "Result": [
+        {
+            "PlanStatusId": "13343664-0e51-484f-b8e9-b9e5d528fa65",
+            "Name": "Application Incomplete",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "e5be5f65-f1ac-442d-a77e-09391ab1812b",
+            "Name": "Approval Expired",
+            "Description": "Status used if the cases' approval time period has expired (i.e. the Standard Building Plan approval may only be good for 3 years). EnerGov's IAA will set the case status to this automatically when the approval expire date equals the current date"
+        },
+        {
+            "PlanStatusId": "3ba53427-936a-47ce-9fe5-9cc1e6b55d7c",
+            "Name": "Approved",
+            "Description": "Status used if the review is approved, and the appeal period has passed"
+        },
+        {
+            "PlanStatusId": "1faed00b-8565-f30f-8c9b-de99110c70a6",
+            "Name": "Approved - Fees Due",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "5267fbd4-9558-47cf-83ea-090e58722706",
+            "Name": "Complete",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "9479c8bd-5848-46aa-b0bf-f89909b83cc1",
+            "Name": "Denied",
+            "Description": "Status used if the application has been denied"
+        },
+        {
+            "PlanStatusId": "f0205ae9-d106-44d9-bd80-b81e63e57e67",
+            "Name": "In Appeal Period",
+            "Description": "Status used following the initial approval.  After an application has been decided on by staff, planning commission or council, the public and applicant have a period of time to appeal the decision"
+        },
+        {
+            "PlanStatusId": "d7b75bae-faa3-4089-a081-dd0f0de8998b",
+            "Name": "In Review",
+            "Description": "Status applied to a case when the review is in progress"
+        },
+        {
+            "PlanStatusId": "82f86984-ba1f-486e-9110-25a48b139050",
+            "Name": "Inactive",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "42650f33-1259-45c2-a76a-a9df1d5e6090",
+            "Name": "Non-Compliant",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "f1d845e4-ca66-4707-950e-30595697cf3e",
+            "Name": "On Hold",
+            "Description": "Status used if the case is on hold for any reason"
+        },
+        {
+            "PlanStatusId": "3cb5a687-f78e-4451-83c8-b4a7e68666b5",
+            "Name": "On-Hold- Customer Action Required",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "ec318b83-4a8f-4097-bf62-69200efa608b",
+            "Name": "Review Expired",
+            "Description": "Status used for cases where the review period has expired.  If a case should reach a decision in 6 months, but hasn't, the case status will be changed to this by EnerGov's IAA"
+        },
+        {
+            "PlanStatusId": "37e1597e-8d5f-4d1c-8719-742c627d5a38",
+            "Name": "Revoked",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "53b571b2-5fa1-4b2e-8938-4bab716f9285",
+            "Name": "Scheduled",
+            "Description": ""
+        },
+        {
+            "PlanStatusId": "c0fb1dc2-2e02-4ecf-92ce-a1347b8d275e",
+            "Name": "Submitted",
+            "Description": "Status used as the default status for most cases, before the review begins"
+        },
+        {
+            "PlanStatusId": "f75bbe7e-d188-4a17-be5d-fddc259bd139",
+            "Name": "Submitted - Online",
+            "Description": "Status that online applications should inherit when first submitted"
+        },
+        {
+            "PlanStatusId": "2c4b6ae6-69d9-47b3-8f2c-a63dc332239b",
+            "Name": "Void",
+            "Description": "Status used if the plan case has been cancelled and no further review will be conducted"
+        },
+        {
+            "PlanStatusId": "78d6405c-df34-4ddd-a90d-78f6078fbc6d",
+            "Name": "Withdrawn",
+            "Description": "Status used if the applicant has withdrawn the application (i.e. following a pre-application meeting)"
+        }
+    ],
+    "Success": true,
+    "ErrorMessage": "",
+    "ValidationErrorMessage": "",
+    "ConcurrencyErrorMessage": "",
+    "StatusCode": 200,
+    "BrokenRules": []
+}

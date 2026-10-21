@@ -1,0 +1,115 @@
+{
+    "Result": [
+        {
+            "PermitStatusId": "2a576f79-9e5f-9e16-1aa9-54a5abf9af37",
+            "Name": "Abandoned",
+            "Description": "Status used to address properly abandoned septic systems and wells that have been previously permitted."
+        },
+        {
+            "PermitStatusId": "0c749683-8166-43b8-9aa3-bf220435149f",
+            "Name": "Application Incomplete",
+            "Description": "Status is used for when a application is incomplete and waiting on customer action.  This will help the customer on the portal know the status of their permit."
+        },
+        {
+            "PermitStatusId": "92898509-31f9-4ffb-9a40-b11b9b49c5b6",
+            "Name": "Approved",
+            "Description": ""
+        },
+        {
+            "PermitStatusId": "a99088bd-b9ae-4f5e-b7cd-995dcfb12ac3",
+            "Name": "Complete",
+            "Description": "Complete.  This status means the permit work is completed, and approved."
+        },
+        {
+            "PermitStatusId": "fb9d361e-2484-4a59-a131-07547fcb44f0",
+            "Name": "Denied",
+            "Description": "Status used if the application has been denied and will not be issued"
+        },
+        {
+            "PermitStatusId": "c6ade350-a68e-43a7-a6c5-124989409564",
+            "Name": "Disapproved",
+            "Description": ""
+        },
+        {
+            "PermitStatusId": "486d9638-0665-4e42-80d7-070607fb046f",
+            "Name": "Expired",
+            "Description": "Expired.  This status is used when a permit has expired and some action is needed.  Our IAA will auto update expired permits this status.  This status DOESN'T prevent anything, a hold would be needed to do this, which our IAA will add."
+        },
+        {
+            "PermitStatusId": "dfc93764-3615-43db-95f6-733d56ea62b6",
+            "Name": "In Review",
+            "Description": "In Review.  This status is used when the permit is in plan review and not issued yet."
+        },
+        {
+            "PermitStatusId": "1ef50016-e14f-4388-8d3a-0e308004a56e",
+            "Name": "Inactive",
+            "Description": "This status is used when a application is waiting on customer action but longer than 6 months."
+        },
+        {
+            "PermitStatusId": "f8b6324d-f3b0-4efc-be19-e171ae0410d4",
+            "Name": "Issued",
+            "Description": "Issued.  This status means the permit work is in progress."
+        },
+        {
+            "PermitStatusId": "51dcbd2a-68cc-45f0-aced-217b96b80e47",
+            "Name": "Non-Compliant ",
+            "Description": "A permit has been issued, but conditions have changed so that the project no longer conforms to the rules, requirements or regulations under which the permit was issued."
+        },
+        {
+            "PermitStatusId": "bd86d592-573d-4924-93a1-22cd7d8b1940",
+            "Name": "On Hold",
+            "Description": "On Hold.  This status is used if the permit work is on hold for some reason other than Stop Work Order which has its own status."
+        },
+        {
+            "PermitStatusId": "d4938ce3-a7f1-47da-8f78-525dc86e5f07",
+            "Name": "On Hold - Customer Action Required",
+            "Description": "On Hold, need customer action to remove hold"
+        },
+        {
+            "PermitStatusId": "bb697bb7-7638-4b17-89a9-e870e89c8253",
+            "Name": "Pending Approval",
+            "Description": "Pending other application approvals"
+        },
+        {
+            "PermitStatusId": "da689121-4eea-4d24-a155-3b13ebfc6b62",
+            "Name": "Revoked",
+            "Description": "Permanently removing the authority to continue under the conditions specific to the permit issued."
+        },
+        {
+            "PermitStatusId": "de2833ae-09cf-418b-abad-76db8f207e6a",
+            "Name": "Stop Work Order",
+            "Description": "Stop Work Order.  This status is used to identify a permit that is currently stopped due to a stop work order.  Adding the stop work order hold to a permit, will automatically update the permit status to \"Stop Work Order\""
+        },
+        {
+            "PermitStatusId": "85321406-0f14-49df-b0c1-f330822171fb",
+            "Name": "Submitted",
+            "Description": "Submitted. This status is used when a permit has been submitted (NOT online), but a plan reviewer hasn't begun the review yet."
+        },
+        {
+            "PermitStatusId": "3a7b84f0-4538-4a81-934f-d0ba3320af10",
+            "Name": "Submitted - Online",
+            "Description": "Submitted, Online.  This status is used as a default for online submissions that haven't had their review started yet."
+        },
+        {
+            "PermitStatusId": "40b8ee3a-1d7f-469d-a325-b377bd971e61",
+            "Name": "Under Violation",
+            "Description": ""
+        },
+        {
+            "PermitStatusId": "b2cd9836-2368-412d-b584-40dfd4fe28c0",
+            "Name": "Void",
+            "Description": "Void.  This status should be used if the permit is no longer valid.  This status should be used instead of deleting the permit."
+        },
+        {
+            "PermitStatusId": "3e571b66-6d05-4300-b68e-66f57e8efcde",
+            "Name": "Withdrawn",
+            "Description": ""
+        }
+    ],
+    "Success": true,
+    "ErrorMessage": "",
+    "ValidationErrorMessage": "",
+    "ConcurrencyErrorMessage": "",
+    "StatusCode": 200,
+    "BrokenRules": []
+}

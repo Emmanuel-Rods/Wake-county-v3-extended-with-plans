@@ -1,0 +1,1667 @@
+{
+    "Result": {
+        "CaseTypes": [
+            {
+                "CaseTypeId": "none",
+                "CaseTypeName": "--Select Type--",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 3
+            },
+            {
+                "CaseTypeId": "none",
+                "CaseTypeName": "--Select License Type--",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "none",
+                "CaseTypeName": "--Select Request Type--",
+                "CategoryObjectId": 6,
+                "CategoryObjectName": "REQUEST",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "none",
+                "CaseTypeName": "--Select Case Type--",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "CODECASE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "none",
+                "CaseTypeName": "--Select Inspection Type--",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "INSPECTION",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "none",
+                "CaseTypeName": "--Select Plan Type--",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "none",
+                "CaseTypeName": "--Select Permit Type--",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "68173709-61e2-6dea-5ddf-5355fe9b277c_8ba80d16-94a2-08b4-04bc-d11f0eb4501f",
+                "CaseTypeName": "A2 - Hybrid Wastewater Permit (Septic)",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "99be362b-6d00-4c07-9a75-a0579fdfdb36_320b5184-99d3-46b6-a4a2-1db12aeca185",
+                "CaseTypeName": "Accessory Structure Application for Wastewater",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "743b21e1-b419-4600-9263-e5c02224201d_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Accommodation and Food Services - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "743b21e1-b419-4600-9263-e5c02224201d_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Accommodation and Food Services - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "a3f4dbfb-5112-4163-bf75-05864d319ae4_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Admin, Support, Waste Mgmt, Remediation Services  - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "a3f4dbfb-5112-4163-bf75-05864d319ae4_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Admin, Support, Waste Mgmt, Remediation Services  - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "f935f839-9e0d-4a1a-b25e-43facc5d0306_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Agriculture, Forestry, Fishing and Hunting - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "f935f839-9e0d-4a1a-b25e-43facc5d0306_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Agriculture, Forestry, Fishing and Hunting - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "d6a4a135-85c0-4ff9-8f36-81e956ccae54_11777dbf-1468-43a8-af90-08c0175570c2",
+                "CaseTypeName": "Approve Existing Well for New Construction",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "09f50b23-bc27-44ac-bace-fa289ff22b29_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Arts, Entertainment, and Recreation - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "09f50b23-bc27-44ac-bace-fa289ff22b29_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Arts, Entertainment, and Recreation - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "3d733eaf-5c85-4319-89c3-1fc73126a4da_a2e00e0c-dac2-4acb-8030-3f061c8ea45f",
+                "CaseTypeName": "Blasting Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ce5aaeb5-b47b-479a-8634-89b5c88434f6_c75020b4-d3d5-46f5-b50e-f0449cbb4720",
+                "CaseTypeName": "Certificate of Appropriateness - COA",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9c0e7bde-83b0-4a63-9fb9-c760aa3ea966_80befd1a-31b0-4692-bdc5-1248dc71e949",
+                "CaseTypeName": "Child Care Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab8839e-3a63-43a2-b7f3-549c72b74c3d_10c4c328-cbb7-4870-b616-4b34bf17d1f9",
+                "CaseTypeName": "Commercial Alteration",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "e0bb609d-a448-45dd-94f2-addeec70fc07_859b5feb-7322-48de-9199-c887379dc722",
+                "CaseTypeName": "Commercial Demolition",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab8839e-3a63-43a2-b7f3-549c72b74c3d_746cfb2b-0f5c-46db-9a52-033cc2bcec25",
+                "CaseTypeName": "Commercial New Building or Addition",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab8839e-3a63-43a2-b7f3-549c72b74c3d_01941c41-7216-4e62-83d3-bc8e96d77488",
+                "CaseTypeName": "Commercial New Multi Family",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab045f0-bb76-4fd5-bc7b-95c13e8e8c4b_33d2696e-a707-44d9-ae32-ef186304cb8d",
+                "CaseTypeName": "Commercial or Residential - Change of Service",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab8839e-3a63-43a2-b7f3-549c72b74c3d_4691eb2c-3cc5-4b15-a28a-b00b5a6d9c7e",
+                "CaseTypeName": "Commercial Pool, Spa or Hot Tub",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab8839e-3a63-43a2-b7f3-549c72b74c3d_2e50d95f-9e54-4c5b-8259-63123763f37b",
+                "CaseTypeName": "Commercial Structures other than Buildings",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab045f0-bb76-4fd5-bc7b-95c13e8e8c4b_d3241c4b-9ff7-483f-a2a0-1dec6c130a8d",
+                "CaseTypeName": "Commercial Trade Permit. Electrical, Mechanical or Plumbing",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9b4e13d9-1852-3bd3-c56e-813b227aca24_bd8ba272-d9c3-e241-961e-252c1c454815",
+                "CaseTypeName": "Commercial Trade Permit. Plumbing, Mechanical, Electrical, or Refrigeration",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4edb6dfa-46c8-4f61-abff-379b927dbb4f_d709a6be-b20b-4c80-991d-51f6694c396b",
+                "CaseTypeName": "Commercial Use Review - Major",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4edb6dfa-46c8-4f61-abff-379b927dbb4f_ab5d9585-0dd6-457e-83f2-0ba726291f30",
+                "CaseTypeName": "Commercial Use Review - Minor",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab8839e-3a63-43a2-b7f3-549c72b74c3d_350ee4ad-9a35-48d9-9dbf-e9afaaa051a8",
+                "CaseTypeName": "Commercial Wake County Public Schools & County Projects",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "2a5bfcb1-2d30-e4bf-01f2-233c6dfa1414_8771989b-8a98-69d6-33c4-df709ad91f8b",
+                "CaseTypeName": "Comprehensive Plan Amendment",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ea2eb18a-1d6d-4ff0-b5f6-7c97573c7d1d_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Construction - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "ea2eb18a-1d6d-4ff0-b5f6-7c97573c7d1d_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Construction - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "bf5a71b7-3635-4442-9f41-9497c128a523_7c724f3a-de43-41fb-9000-4edd661b406b",
+                "CaseTypeName": "Contractor - Electrical Contractor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "bf5a71b7-3635-4442-9f41-9497c128a523_9845905f-0a57-4851-a4f7-1af4e48c216a",
+                "CaseTypeName": "Contractor - Engineering Contractor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "bf5a71b7-3635-4442-9f41-9497c128a523_ea00c5ec-1e59-4aac-b6ac-02d2ac139d7b",
+                "CaseTypeName": "Contractor - General Contractor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "bf5a71b7-3635-4442-9f41-9497c128a523_cda23766-892a-413d-880c-148b19b2696d",
+                "CaseTypeName": "Contractor - Mechanical Contractor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "bf5a71b7-3635-4442-9f41-9497c128a523_1cf20384-a21c-4661-8acd-0768731fe575",
+                "CaseTypeName": "Contractor - Plumbing Contractor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "28cb5a22-802c-471a-9eae-ee216550f92a_25b89026-a172-4ba3-ac23-ccd8d8d36825",
+                "CaseTypeName": "Delete - WW - Septic Repair Permit - Septic Permit Residential",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "eeb48252-b580-4b72-9a33-2af08fe1189c_a14b1051-99b2-40a4-8e0b-dc103cd12d2b",
+                "CaseTypeName": "Delete_Certificate of Occupancy - Certificate of Occupancy",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ac078529-b927-4d4f-a2a8-59fcad025114_N/A",
+                "CaseTypeName": "Delete_Electrical (Non-Residential) - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3f569456-8821-433d-8abe-420327950470_N/A",
+                "CaseTypeName": "Delete_Electrical (Residential) - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "2970e2bb-eb7c-4b3c-9e42-0d108ac220b6_N/A",
+                "CaseTypeName": "Delete_Fire - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a59356b2-154b-48e4-a390-e29f93e358c8_N/A",
+                "CaseTypeName": "Delete_GW-4 Well - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "925c11bc-2d48-4137-96f8-b4f19f1e315c_N/A",
+                "CaseTypeName": "Delete_Mechanical (Non-Residential) - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "74eccf4a-f523-4593-96af-a052cc731d31_N/A",
+                "CaseTypeName": "Delete_Mechanical (Residential) - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1b187d2a-bfdf-4423-8e8a-bc17d847a11c_0918b9d8-ff1a-4b4e-ba4a-7b3402b4c983",
+                "CaseTypeName": "Delete_Operations Permit Renewal - Operations Permit Renewal",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "cc34f905-4b48-4580-b364-0a38e267ad80_N/A",
+                "CaseTypeName": "Delete_Plumbing (Non-Residential) - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "0f706ae8-bf38-4f8d-b364-c4998c909eff_N/A",
+                "CaseTypeName": "Delete_Plumbing (Residential) - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "82ceb452-fba8-4f64-8790-82e2ac470365_N/A",
+                "CaseTypeName": "Delete_Right of Way - N/A",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a5f44bf3-4fba-4b55-9e72-b0dc246f6a14_f84b7c62-2a74-4007-bddb-0ae4782912be",
+                "CaseTypeName": "Delete_Sign - Temporary",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "5949ecc6-4283-4f72-a262-b87f632d4835_e7c36a6c-2906-407c-bc57-f80a83da8022",
+                "CaseTypeName": "Delete-WM - Storm Water - Storm Water Permit",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "03a89463-dd50-4927-8365-e6755933a241_b30cedcb-572c-432c-90d2-a9fc7798ccb9",
+                "CaseTypeName": "DO NOT USE",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3eed0206-bead-48a5-97bf-4147bacbb8d7_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Educational Services - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "3eed0206-bead-48a5-97bf-4147bacbb8d7_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Educational Services - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "901b1ae9-6f9e-4acb-9b96-ac583610ee4e_660ceae6-81da-4f1d-9f9f-22a6fc5019b0",
+                "CaseTypeName": "Engineered Option - Addition",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "901b1ae9-6f9e-4acb-9b96-ac583610ee4e_96d4b734-faa3-4d50-b05e-af0e1f3176b1",
+                "CaseTypeName": "Engineered Option - Existing",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "901b1ae9-6f9e-4acb-9b96-ac583610ee4e_c1b0f0f1-5ee6-4207-b1ee-45271db36ec2",
+                "CaseTypeName": "Engineered Option - Expansion",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "901b1ae9-6f9e-4acb-9b96-ac583610ee4e_20379427-73a5-4ce6-a4e3-d94d3b3053f9",
+                "CaseTypeName": "Engineered Option - New",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "acabd352-0af2-4914-b9a0-91fd24f62728_896ee972-4fa8-4096-b035-4318469c2fc7",
+                "CaseTypeName": "Extra Territorial Jurisdiction Request - Extra Territorial Jurisdiction",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "5867b128-b0fc-4326-a413-e5ce306b6b97_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Finance and Insurance - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "5867b128-b0fc-4326-a413-e5ce306b6b97_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Finance and Insurance - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "00bd9b3e-f5a5-4f80-b896-4d7546e5e8b9_a990e845-51e5-4944-802e-99f484f6acb9",
+                "CaseTypeName": "Fire Services - Fire Sprinkler",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "00bd9b3e-f5a5-4f80-b896-4d7546e5e8b9_88be32c1-c3e3-46c3-afca-fcdaf45baa60",
+                "CaseTypeName": "Fire Services - Flammable/Combustible Liquid Tank",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "00bd9b3e-f5a5-4f80-b896-4d7546e5e8b9_12e7d800-8eaf-408a-87a9-533c470e9b9c",
+                "CaseTypeName": "Fire Services Trade - Alternate Extinguishing System",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "00bd9b3e-f5a5-4f80-b896-4d7546e5e8b9_319865a3-83d1-427e-b857-142d018e239d",
+                "CaseTypeName": "Fire Services Trade - Fire Alarm",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "cf49bbb4-e8dd-4bba-a37c-18b0cd632141_9cebe934-afe9-4018-8563-6fffaa768a0f",
+                "CaseTypeName": "Flood Study Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9c0e7bde-83b0-4a63-9fb9-c760aa3ea966_ff05ca3e-696f-4c1c-9ff9-5a439ded649f",
+                "CaseTypeName": "Food Service Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "fc736a5a-f19c-4340-af46-c7aa04e089c9_888087ea-78c2-4cbc-9cbd-2aa917d870f4",
+                "CaseTypeName": "Food Truck Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "71032bf8-81d6-476e-aa25-06a8e4b61683_7650bd30-0c9b-4728-9dcc-29d953c24281",
+                "CaseTypeName": "Grave Removal - Grave Removal",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4ab49f33-b34a-4cb7-991d-44c1ed871f13_b4b878d1-41a4-4191-bdff-97ddeb6edaa6",
+                "CaseTypeName": "GW - Well Sample - Walk-In",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "acd1ace0-4744-408f-bc84-447cc536e012_88e7f375-5036-40e7-9e8f-45b3c5ea791a",
+                "CaseTypeName": "H&S - Consultation - Consultation",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "b82c509f-659d-4e41-a560-e2863d051b20_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Health Care and Social Assistance - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "b82c509f-659d-4e41-a560-e2863d051b20_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Health Care and Social Assistance - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_bce1ae81-2855-4f47-ad0f-8a9e669d1c57",
+                "CaseTypeName": "Health Services - Audiologist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_64ce8608-9791-4e57-8bc7-cd6c41ea1f2d",
+                "CaseTypeName": "Health Services - Chiropractor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_7a790c4d-3e63-4e3f-8dcd-963b37124441",
+                "CaseTypeName": "Health Services - Clinical Social Worker",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_1962dab6-58d4-4bc7-9f9f-7d81093c191c",
+                "CaseTypeName": "Health Services - Dentist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_8c0c2efd-6998-4ac4-8508-543078dbcd24",
+                "CaseTypeName": "Health Services - Dietician",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_c9bfe670-2caa-4fce-a198-82c26f629d51",
+                "CaseTypeName": "Health Services - Dispensing Optician",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_8c93b0a7-32a5-439b-9166-30b54842be87",
+                "CaseTypeName": "Health Services - Marriage and Family Therapist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_38dc117e-b64e-4c7a-bc53-5e11e10a9223",
+                "CaseTypeName": "Health Services - Massage Therapist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_6506a752-d83f-4aa4-b108-b628be45ff42",
+                "CaseTypeName": "Health Services - Mental Health Counselor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_7bd9daaf-0e6a-4d3a-a97a-452c0a00ff0f",
+                "CaseTypeName": "Health Services - Nurse/Midwife",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_14263241-0366-4f3d-a1c3-e97d43910644",
+                "CaseTypeName": "Health Services - Nutritionist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_fd2382c7-1025-44ad-acdc-3066d114fd88",
+                "CaseTypeName": "Health Services - Occupational Therapist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_a63e45d1-935e-468c-bc1f-54e457be376c",
+                "CaseTypeName": "Health Services - Optometrist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_8a0008c2-76a3-414a-98b4-34de8bc80ee3",
+                "CaseTypeName": "Health Services - Physical Therapist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_0af41032-4330-475b-9977-ba73365cdb98",
+                "CaseTypeName": "Health Services - Physician",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_e2ebc0f3-273c-42ab-bd46-6d4e63a1ee62",
+                "CaseTypeName": "Health Services - Podiatrist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_e04be178-4077-4f7e-98c1-efe5048481a6",
+                "CaseTypeName": "Health Services - Psychologist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_5aadeba4-69a0-43de-b2d3-1264a2591432",
+                "CaseTypeName": "Health Services - School Psychologist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "1c70bc78-a5ab-499d-ade5-603c68d17c4a_52b1e492-597f-4b04-89a9-fb4b3ddd0511",
+                "CaseTypeName": "Health Services - Speech Pathologist",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9c0e7bde-83b0-4a63-9fb9-c760aa3ea966_1250f0cb-2e5d-44df-b000-22eaae2f6712",
+                "CaseTypeName": "Hotel Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "50d75c53-a5f6-4b91-8a80-66bc16c94512_f7bf13f6-5d62-4364-8e7f-8f85051f9837",
+                "CaseTypeName": "Individual Lot Flood Certifications",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "024e330b-e8ac-451a-9fa1-5e0c1a4648c7_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Information - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "024e330b-e8ac-451a-9fa1-5e0c1a4648c7_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Information - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "9c0e7bde-83b0-4a63-9fb9-c760aa3ea966_9a5521b3-1865-49f9-a42d-6654b0ecb36c",
+                "CaseTypeName": "Institution Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "e2249757-30a0-472d-ba38-cbd58842eba3_ad852751-af48-4028-a0eb-0de8eb101b82",
+                "CaseTypeName": "Land Disturbance - Individual Lot or Group of Lots",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "e2249757-30a0-472d-ba38-cbd58842eba3_a0d8cc0d-71cb-45b6-84b9-0a76fea1b0fe",
+                "CaseTypeName": "Land Disturbance - Non-residential",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "e2249757-30a0-472d-ba38-cbd58842eba3_d6253f1e-8aae-4349-a0e2-d7898a3d1bb4",
+                "CaseTypeName": "Land Disturbance - Subdivision (Roads or Lots)",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "59a76a19-c1aa-4b69-b0ae-4487d5f3b8b8_e7950af8-9398-4bbc-9fef-39ba36b2fd27",
+                "CaseTypeName": "Land Use Permit - Simple",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "59a76a19-c1aa-4b69-b0ae-4487d5f3b8b8_086ad380-bcc9-403f-964d-b1ea2f5e4681",
+                "CaseTypeName": "Land Use Permit - Special",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "48027e8e-5f10-4a70-84aa-37198af26f79_aebecc3f-e574-485c-8a04-22e2f4be36d9",
+                "CaseTypeName": "Land Use Plan Amendment - Land Use Plan Amendment",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "36495255-4867-4e3d-b74e-ffd039144fce_20379427-73a5-4ce6-a4e3-d94d3b3053f9",
+                "CaseTypeName": "LSS COVID-19 - New",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4b71d0d5-59ea-4326-b75b-2544b38e6b23_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Management of Companies and Enterprises - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "4b71d0d5-59ea-4326-b75b-2544b38e6b23_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Management of Companies and Enterprises - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "d66f1ef9-e852-4bca-9a8c-189a73cd6b17_c59b050c-30d1-4010-b2f5-5f7f674b5ce3",
+                "CaseTypeName": "Manufactured Home - Alterations or Repairs",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "d66f1ef9-e852-4bca-9a8c-189a73cd6b17_d13e6f98-75fb-459b-a3d1-df7cde8fe63b",
+                "CaseTypeName": "Manufactured Home - New or Replacement (Not Modular)",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "0ece1016-9da5-41e8-a78b-5ee7bbb6be6b_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Manufacturing - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "0ece1016-9da5-41e8-a78b-5ee7bbb6be6b_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Manufacturing - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "a30e57ab-c86f-4c8f-bbd5-4ee4cdbcf3c1_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Mining, Quarrying, and Oil and Gas Extraction - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "a30e57ab-c86f-4c8f-bbd5-4ee4cdbcf3c1_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Mining, Quarrying, and Oil and Gas Extraction - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "0822516a-c5bc-4064-bd5a-ae757021e25c_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Other Services (except Public Administration) - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "0822516a-c5bc-4064-bd5a-ae757021e25c_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Other Services (except Public Administration) - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "7ab8839e-3a63-43a2-b7f3-549c72b74c3d_08f59f45-0fe6-b7d3-5121-eb0c90da1f5f",
+                "CaseTypeName": "P&I - Commercial Building - Special Projects Permit",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "d6a4a135-85c0-4ff9-8f36-81e956ccae54_fca8693f-58d9-4dd9-8eea-14abfa301cbf",
+                "CaseTypeName": "Permit for Abandonment of a Well",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "d6a4a135-85c0-4ff9-8f36-81e956ccae54_1043e556-9deb-4891-a69a-3862542f39e5",
+                "CaseTypeName": "Permit for New Well",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "674d0c24-0b02-4212-9782-3a3bc72f523b_19652d47-d735-843d-461c-c361fb0b1c93",
+                "CaseTypeName": "Permit for Residential Wastewater (Septic)",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "240128a5-0ac8-4204-b84d-d27b5f3e85bf_89aa1ace-ca72-45e5-af03-0c54f6807878",
+                "CaseTypeName": "Permit Issuance Process - Permit Issuance Process",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "240128a5-0ac8-4204-b84d-d27b5f3e85bf_acb427ba-5fb7-165d-9f41-8a752afa4473",
+                "CaseTypeName": "Permit Issuance Process - TEST Residential One and Two - Family Dwelling",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "03a89463-dd50-4927-8365-e6755933a241_67f1ff8f-51f4-4fb5-b47a-9780aa3eb6de",
+                "CaseTypeName": "Planned Compliance Permit",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ffc02d48-5325-42b7-9a60-9782b7d1cca3_63e84da2-ecd2-435d-9607-896cdbb1e612",
+                "CaseTypeName": "PLG - Pre-Submittal Meeting - General",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ffc02d48-5325-42b7-9a60-9782b7d1cca3_2bec5a4b-a4f4-473e-9c81-66e50fe6f5b1",
+                "CaseTypeName": "Pre-Submittal Meeting - Care Facility",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ffc02d48-5325-42b7-9a60-9782b7d1cca3_e58ed724-99d7-4e62-883f-4f73a34d9022",
+                "CaseTypeName": "Pre-Submittal Meeting - Commercial (Non-Residential)",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ffc02d48-5325-42b7-9a60-9782b7d1cca3_5c9b7efc-0fdf-4db4-8758-1bc9abe983c4",
+                "CaseTypeName": "Pre-Submittal Meeting - Rezoning",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "ffc02d48-5325-42b7-9a60-9782b7d1cca3_b7bf655a-0f96-4aa0-b271-be3125a48ef9",
+                "CaseTypeName": "Pre-Submittal Meeting - Subdivision",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "13f15723-b9d3-40dd-a8ee-c06491b0ff2d_d174b6b4-4a45-43cb-984b-93d1bf8286a2",
+                "CaseTypeName": "Professional Option Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_c2dcd2d6-45f5-4ebb-8bca-82dfc9ebf9d2",
+                "CaseTypeName": "Professional Regulation - Architect",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_5be677f4-dabb-4a57-9889-c3f7249204e6",
+                "CaseTypeName": "Professional Regulation - Attorney",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_a32183a8-2aa3-4bce-9506-e7c1fb8de57b",
+                "CaseTypeName": "Professional Regulation - Barber",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_255067f4-a402-444f-9d2b-a126e1106bde",
+                "CaseTypeName": "Professional Regulation - Beautician",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_54106c59-fe72-4c6f-bde6-aa88dafd7281",
+                "CaseTypeName": "Professional Regulation - CPA",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_27a4c695-d43b-4f21-9094-b295c7c20fd0",
+                "CaseTypeName": "Professional Regulation - Insurance Adjuster",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_20dba1cf-dffa-4e5c-afcd-fe93f8438e5e",
+                "CaseTypeName": "Professional Regulation - Interior Designer",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_9395c93a-9743-46b5-a1e3-6a5b8c1907ce",
+                "CaseTypeName": "Professional Regulation - Land Surveyor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_6486286e-f75a-421d-a29c-f467fd771a88",
+                "CaseTypeName": "Professional Regulation - Landscape Architect",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_543770f0-2686-49fa-b765-741e289bbe12",
+                "CaseTypeName": "Professional Regulation - Real Estate Appraiser",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_23e8cf2d-37cd-49a3-8639-798266207e88",
+                "CaseTypeName": "Professional Regulation - Real Estate Broker",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_ac775371-4caf-4062-b022-9628fd26409d",
+                "CaseTypeName": "Professional Regulation - Stock/Bond/Commodity Broker",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a1699370-cdc7-4b86-b231-8ec44344ae3c_8093aeab-6985-4b4c-b60c-ce6e50bdb59e",
+                "CaseTypeName": "Professional Regulation - Veterinarian",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "acfb07d3-bf50-4a02-b03d-52314989e351_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Professional, Scientific, and Technical Services - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "acfb07d3-bf50-4a02-b03d-52314989e351_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Professional, Scientific, and Technical Services - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "ce4a4755-c390-4144-a858-2cd0def2a8f3_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Public Administration - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "ce4a4755-c390-4144-a858-2cd0def2a8f3_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Public Administration - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "9c0e7bde-83b0-4a63-9fb9-c760aa3ea966_a848f7b2-fd35-4acd-a08c-dd328067d7c9",
+                "CaseTypeName": "Public Pool Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "fc736a5a-f19c-4340-af46-c7aa04e089c9_70425c83-2a64-4b86-b7d7-c1299d1bdc69",
+                "CaseTypeName": "Pushcart Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3d733eaf-5c85-4319-89c3-1fc73126a4da_3998c663-8e72-4cc1-b0ee-81753652942b",
+                "CaseTypeName": "Pyrotechnics Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "2d8f9049-2ced-4431-8fbc-985820122393_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Real Estate and Rental and Leasing - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "2d8f9049-2ced-4431-8fbc-985820122393_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Real Estate and Rental and Leasing - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "295a2047-934f-4d83-b386-93c46cc8e3d9_307de8f1-89f3-4272-8f40-55c4f54f3ca6",
+                "CaseTypeName": "Regulatory Business - Ice Cream Vendor",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "295a2047-934f-4d83-b386-93c46cc8e3d9_94354934-cad1-4053-aacd-3efbbc44f159",
+                "CaseTypeName": "Regulatory Business - Junk Dealer",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "295a2047-934f-4d83-b386-93c46cc8e3d9_b7fe2976-01f7-45cd-831b-b2f3d00341bf",
+                "CaseTypeName": "Regulatory Business - Pawn Broker",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "295a2047-934f-4d83-b386-93c46cc8e3d9_b4adf4a0-c290-4c24-87f4-9b7fd4478bc8",
+                "CaseTypeName": "Regulatory Business - Peddlers",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "295a2047-934f-4d83-b386-93c46cc8e3d9_2935a909-94ca-43f0-9126-ed4c0717f867",
+                "CaseTypeName": "Regulatory Business - Solicitors",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3921e2e6-5d4b-4aad-89b3-212319bf789e_0b63d11c-11a2-481f-94e2-bc312dedb337",
+                "CaseTypeName": "Residential - New One- and Two-Family Dwelling",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "75eb5728-0437-475d-9bac-aa9058dd8d8d_bccd9dcb-9370-46d2-befc-d50d57c949cf",
+                "CaseTypeName": "Residential Accessory Building or Structure",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "75eb5728-0437-475d-9bac-aa9058dd8d8d_660ceae6-81da-4f1d-9f9f-22a6fc5019b0",
+                "CaseTypeName": "Residential Addition",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "75eb5728-0437-475d-9bac-aa9058dd8d8d_ba999c79-b419-4674-8a09-e0b2cb398497",
+                "CaseTypeName": "Residential Alteration",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "75eb5728-0437-475d-9bac-aa9058dd8d8d_3ebb93bc-ab39-451c-83f1-358d9107fb6b",
+                "CaseTypeName": "Residential Deck",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "e0bb609d-a448-45dd-94f2-addeec70fc07_a0bb4a70-f672-487a-ad66-4111b8e9d98a",
+                "CaseTypeName": "Residential Demolition",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab045f0-bb76-4fd5-bc7b-95c13e8e8c4b_ab1652df-19fd-4194-9bfb-b82947381d7e",
+                "CaseTypeName": "Residential HVAC or Water Heater Replacement",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3921e2e6-5d4b-4aad-89b3-212319bf789e_3f0667ad-47a3-44a4-aa5c-767d3f882389",
+                "CaseTypeName": "Residential Move Existing Home",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3921e2e6-5d4b-4aad-89b3-212319bf789e_51f5eea8-3d43-4d89-b1c5-906d55342196",
+                "CaseTypeName": "Residential New Modular Home",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3921e2e6-5d4b-4aad-89b3-212319bf789e_23dced81-230c-46cd-97c7-e4bb1f28bf70",
+                "CaseTypeName": "Residential New Two Family Dwelling",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "75eb5728-0437-475d-9bac-aa9058dd8d8d_9117f1f0-2668-4a5f-8320-b9b69888faf8",
+                "CaseTypeName": "Residential Non-Building Structures",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7ab045f0-bb76-4fd5-bc7b-95c13e8e8c4b_93f14b82-aec8-450d-adbc-bc5995b6ce17",
+                "CaseTypeName": "Residential or Farm Trade Permit. Electrical, Mechanical or Plumbing",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "674d0c24-0b02-4212-9782-3a3bc72f523b_660ceae6-81da-4f1d-9f9f-22a6fc5019b0",
+                "CaseTypeName": "Residential Permit - Addition",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "674d0c24-0b02-4212-9782-3a3bc72f523b_96d4b734-faa3-4d50-b05e-af0e1f3176b1",
+                "CaseTypeName": "Residential Permit - Existing",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "674d0c24-0b02-4212-9782-3a3bc72f523b_c1b0f0f1-5ee6-4207-b1ee-45271db36ec2",
+                "CaseTypeName": "Residential Permit - Expansion",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "674d0c24-0b02-4212-9782-3a3bc72f523b_777f7e47-5fbd-41e3-8ee4-3c5e3be560b7",
+                "CaseTypeName": "Residential Permit - Mobile Home Park Relocation",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "674d0c24-0b02-4212-9782-3a3bc72f523b_20379427-73a5-4ce6-a4e3-d94d3b3053f9",
+                "CaseTypeName": "Residential Permit - New",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "75eb5728-0437-475d-9bac-aa9058dd8d8d_a848f7b2-fd35-4acd-a08c-dd328067d7c9",
+                "CaseTypeName": "Residential Pool",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "75eb5728-0437-475d-9bac-aa9058dd8d8d_edf11241-df43-8cab-4610-6381babf5ea9",
+                "CaseTypeName": "Residential Pool, Spa & Hot Tub",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "82101a82-0bd3-7278-9086-278a517af104_88f5f03c-d614-fed8-24d9-d6fab0b70049",
+                "CaseTypeName": "Residential Trade Permit. Plumbing, Mechanical, or Electrical",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "94e6e0a1-958b-4330-b74d-77f40ab2c38e_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Retail Trade - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "94e6e0a1-958b-4330-b74d-77f40ab2c38e_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Retail Trade - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "224c1a1f-d2ed-4f31-924d-cdb80320ec99_5c9b7efc-0fdf-4db4-8758-1bc9abe983c4",
+                "CaseTypeName": "Rezoning",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "067be2b0-27e2-4d7b-847e-86e389320a34_b30cedcb-572c-432c-90d2-a9fc7798ccb9",
+                "CaseTypeName": "Special Use",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3d733eaf-5c85-4319-89c3-1fc73126a4da_7ad33433-915e-4645-b26b-06a2e89fdc2a",
+                "CaseTypeName": "Storage Tank Removal Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "cf49bbb4-e8dd-4bba-a37c-18b0cd632141_644d4db1-35c6-497b-a032-cb3e811ee647",
+                "CaseTypeName": "Stormwater Deviation",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "cf49bbb4-e8dd-4bba-a37c-18b0cd632141_10e4c9dd-564a-4b9b-a1be-50b8ab1e0cd6",
+                "CaseTypeName": "Stormwater Management -  Non-residential",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "cf49bbb4-e8dd-4bba-a37c-18b0cd632141_f71f103a-b944-4b30-b73c-67b09652ca65",
+                "CaseTypeName": "Stormwater Management -  Residential",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "019fe555-23b2-427d-afd3-1bb9aede8d91_b7bf655a-0f96-4aa0-b271-be3125a48ef9",
+                "CaseTypeName": "Subdivision Appeal Request",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "0dd11d7e-f3af-46e1-8aa9-37ef813f8647_6c7cd86c-d226-4af5-ad52-14c9f9e7c02c",
+                "CaseTypeName": "Subdivision Hardship Variance - Subdivision Hardship Variance",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9d3f6a32-633b-428e-9c8d-17e31188fb45_2e395440-5316-452f-bd34-ba8633d07ac2",
+                "CaseTypeName": "Subdivision Plan Review - Construction",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9d3f6a32-633b-428e-9c8d-17e31188fb45_bb7f4b5b-1ce2-4aed-82c8-c12653cf1ee8",
+                "CaseTypeName": "Subdivision Plan Review - Exempt",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9d3f6a32-633b-428e-9c8d-17e31188fb45_6a3e00c8-85f7-475d-8074-8f2f2d6d24ff",
+                "CaseTypeName": "Subdivision Plan Review - Final",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9d3f6a32-633b-428e-9c8d-17e31188fb45_ab5d9585-0dd6-457e-83f2-0ba726291f30",
+                "CaseTypeName": "Subdivision Plan Review - Minor",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9d3f6a32-633b-428e-9c8d-17e31188fb45_744c6987-5cb0-4799-9685-9525735d7a38",
+                "CaseTypeName": "Subdivision Plan Review - Minor-Limited",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "9d3f6a32-633b-428e-9c8d-17e31188fb45_2c5bb0f2-edda-4f1b-8db7-649636d23cb8",
+                "CaseTypeName": "Subdivision Plan Review - Preliminary",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4ad119f0-b91e-4d93-a10d-66c1f5af8551_c5c6a2d1-91d4-4f55-8847-c0e347c5b924",
+                "CaseTypeName": "Temporary Food Establishment - Coordinator Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4ad119f0-b91e-4d93-a10d-66c1f5af8551_515e99a4-8d11-465b-b151-61901bef06be",
+                "CaseTypeName": "Temporary Food Establishment - Individual Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "3d733eaf-5c85-4319-89c3-1fc73126a4da_437eb718-2136-4be0-ad9a-a1c6936e90c7",
+                "CaseTypeName": "Tents Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "f8c5c968-0ec3-41b5-883f-da36b81562c8_acb427ba-5fb7-165d-9f41-8a752afa4473",
+                "CaseTypeName": "Test Permit - TEST Residential One and Two - Family Dwelling",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "a623666f-6df6-476f-8d78-3018a3310147_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Transportation and Warehousing - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "a623666f-6df6-476f-8d78-3018a3310147_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Transportation and Warehousing - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "d8e66043-ab72-46b0-b391-e85eefb52096_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Utilities - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "d8e66043-ab72-46b0-b391-e85eefb52096_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Utilities - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "5affeb3d-2722-4cac-8639-ec759c2d1d13_946af7db-b1a8-4b38-9bc9-01c3b6647df5",
+                "CaseTypeName": "Wastewater Abandonment",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "766859ce-46e6-4596-92c8-190fa1fc9d8c_660ceae6-81da-4f1d-9f9f-22a6fc5019b0",
+                "CaseTypeName": "Wastewater Commercial Permit - Addition",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "766859ce-46e6-4596-92c8-190fa1fc9d8c_96d4b734-faa3-4d50-b05e-af0e1f3176b1",
+                "CaseTypeName": "Wastewater Commercial Permit - Existing",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "766859ce-46e6-4596-92c8-190fa1fc9d8c_c1b0f0f1-5ee6-4207-b1ee-45271db36ec2",
+                "CaseTypeName": "Wastewater Commercial Permit - Expansion",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "766859ce-46e6-4596-92c8-190fa1fc9d8c_20379427-73a5-4ce6-a4e3-d94d3b3053f9",
+                "CaseTypeName": "Wastewater Commercial Permit - New",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "338ab546-06fb-4347-a467-23a2c774745f_99afb0c2-24b3-4300-b0a6-ce38b4d50fee",
+                "CaseTypeName": "Wastewater Repair",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "77c2d815-54dc-4227-97bf-072da12a0abc_be9d52c4-b9d7-4b7c-9458-873d52330c56",
+                "CaseTypeName": "Wastewater: Offsite Easement Drainfield Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "77c2d815-54dc-4227-97bf-072da12a0abc_189f134c-b964-438f-8a56-a21cd7de0a21",
+                "CaseTypeName": "Wastewater: Offsite Easement Supply Line Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "d6a4a135-85c0-4ff9-8f36-81e956ccae54_aa9d5872-85f0-40ec-aa22-7d122aa0e4f5",
+                "CaseTypeName": "Well Repair Permit",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4ab49f33-b34a-4cb7-991d-44c1ed871f13_11777dbf-1468-43a8-af90-08c0175570c2",
+                "CaseTypeName": "Well Water Sampling - Existing Well",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "4ab49f33-b34a-4cb7-991d-44c1ed871f13_1043e556-9deb-4891-a69a-3862542f39e5",
+                "CaseTypeName": "Well Water Sampling - New Well",
+                "CategoryObjectId": 1,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "61c233b4-6613-4eb8-b039-fd5fab3dbc66_412c1345-9828-4cc5-b01f-f1f173ccc7bb",
+                "CaseTypeName": "Wholesale Trade - In Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "61c233b4-6613-4eb8-b039-fd5fab3dbc66_bf021940-07ed-4614-89fe-c91fd0d17f55",
+                "CaseTypeName": "Wholesale Trade - Out of Jurisdiction",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "LICENSE",
+                "BusinessLicenseTypeModuleId": 1
+            },
+            {
+                "CaseTypeId": "50d75c53-a5f6-4b91-8a80-66bc16c94512_0e0d232f-28c0-4710-beaf-92b5196e8c23",
+                "CaseTypeName": "WM - Single Family Residential - Stormwater",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "cf49bbb4-e8dd-4bba-a37c-18b0cd632141_ab0ebaa1-681e-30eb-e768-fb9db582f6ec",
+                "CaseTypeName": "WM - Stormwater & Flood Permit - Preliminary",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "95352593-df5f-4f9a-a45a-38ccad6e5138_5dcf7566-23b9-4c0d-93c3-394d2222705c",
+                "CaseTypeName": "WW - Grave Removal - Grave Removal",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "36495255-4867-4e3d-b74e-ffd039144fce_c59b050c-30d1-4010-b2f5-5f7f674b5ce3",
+                "CaseTypeName": "WW – LSS COVID-19 - Repair, Alteration, or Addition",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "766859ce-46e6-4596-92c8-190fa1fc9d8c_1b2b8d0c-defc-4fbc-90ad-4cb28d5c165b",
+                "CaseTypeName": "WW - Wastewater Commercial Permit - OSSD Orphaned - Legacy Only",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "674d0c24-0b02-4212-9782-3a3bc72f523b_1b2b8d0c-defc-4fbc-90ad-4cb28d5c165b",
+                "CaseTypeName": "WW - Wastewater Residential Permit  - OSSD Orphaned - Legacy Only",
+                "CategoryObjectId": 0,
+                "CategoryObjectName": "PERMIT",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "019fe555-23b2-427d-afd3-1bb9aede8d91_1e0f0296-732e-452e-a015-7384e07b4ce7",
+                "CaseTypeName": "Zoning Appeal Request",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            },
+            {
+                "CaseTypeId": "7505cc98-33b1-4a0b-a1a4-7e30ab34b8f5_d93228c9-5f9c-413a-821a-04a1fb8ebc1e",
+                "CaseTypeName": "Zoning Hardship Variance - Zoning Hardship Variance",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "PLAN",
+                "BusinessLicenseTypeModuleId": null
+            }
+        ],
+        "Status": [
+            {
+                "StatusId": "none",
+                "Name": "--Select Request Status--",
+                "CategoryObjectId": 6,
+                "CategoryObjectName": "STATUS"
+            },
+            {
+                "StatusId": "none",
+                "Name": "--Select Code Case Status--",
+                "CategoryObjectId": 5,
+                "CategoryObjectName": "STATUS"
+            },
+            {
+                "StatusId": "none",
+                "Name": "--Select Inspection Status--",
+                "CategoryObjectId": 4,
+                "CategoryObjectName": "STATUS"
+            },
+            {
+                "StatusId": "none",
+                "Name": "--Select Plan Status--",
+                "CategoryObjectId": 3,
+                "CategoryObjectName": "STATUS"
+            },
+            {
+                "StatusId": "none",
+                "Name": "--Select Permit Status--",
+                "CategoryObjectId": 2,
+                "CategoryObjectName": "STATUS"
+            }
+        ],
+        "LicenseStatus": [
+            {
+                "LicenseStatusId": "none",
+                "Name": "--Select License Status--",
+                "CategoryObjectId": 10,
+                "CategoryObjectName": "LICENSESTATUS"
+            }
+        ],
+        "BusinessStatus": [
+            {
+                "BusinessStatusId": "none",
+                "Name": "--Select Business Status--",
+                "CategoryObjectId": 10,
+                "CategoryObjectName": "BUSINESSSTATUS"
+            }
+        ],
+        "BusinessTypes": [
+            {
+                "BusinessTypeId": "none",
+                "BusinessTypeName": "--Select Industry Classification-",
+                "CategoryObjectId": 10,
+                "CategoryObjectName": "BUSINESSTYPE"
+            }
+        ],
+        "CompanyTypes": [
+            {
+                "CompanyTypeId": "none",
+                "CompanyTypeName": "--Select Company Type--",
+                "CategoryObjectId": 10,
+                "CategoryObjectName": "COMPANYTYPE"
+            }
+        ],
+        "SearchFilters": [
+            {
+                "FilterValue": 1,
+                "FilterName": "All"
+            },
+            {
+                "FilterValue": 2,
+                "FilterName": "Permit"
+            },
+            {
+                "FilterValue": 3,
+                "FilterName": "Plan"
+            },
+            {
+                "FilterValue": 4,
+                "FilterName": "Inspection"
+            },
+            {
+                "FilterValue": 5,
+                "FilterName": "Code Case"
+            },
+            {
+                "FilterValue": 6,
+                "FilterName": "Request"
+            },
+            {
+                "FilterValue": 11,
+                "FilterName": "Project"
+            }
+        ]
+    },
+    "Success": true,
+    "ErrorMessage": "",
+    "ValidationErrorMessage": "",
+    "ConcurrencyErrorMessage": "",
+    "StatusCode": 200,
+    "BrokenRules": []
+}
