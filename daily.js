@@ -21,7 +21,7 @@ const {
 } = require("./config.js");
 
 // making sure the files exits
-const statusIds = loadJson("./site.data/status.ids.json");
+const statusIds = loadJson("./site.data/plans.status.ids.json"); //change this
 const secondaryIds = loadJson("./site.data/secondary.data.json");
 
 //validate the the contents of the array matches with the files
@@ -51,7 +51,7 @@ function getDateDaysAgo(offset = 1) {
 const payload = loadJson("src/search-permits/payload.json");
 
 async function getResultsforStatues(second) {
-  payload.PermitCriteria.PermitTypeId = second;
+  payload.PlanCriteria.PlanTypeId = second; // change this
   console.log("Secondary data", second);
   //need to delete daily permits or it will just append to the older file
   fs.rmSync("./daily_permits.json", { force: true });
@@ -59,13 +59,12 @@ async function getResultsforStatues(second) {
   for (const status of requiredStatuses) {
     const statusObj = getStatusByName(statusIds, status);
 
-    payload.PermitCriteria.PermitStatusId = statusObj.PermitStatusId;
+    payload.PlanCriteria.PlanStatusId = statusObj.PlanStatusId;
 
     console.log("Getting for status :", statusObj.Name);
 
-    payload.PermitCriteria.IssueDateFrom = getDateDaysAgo(dateOffset); // 2 days ago
+    payload.PlanCriteria.ApplyDateFrom = getDateDaysAgo(dateOffset); // 2 days ago
     // console.log(getDateDaysAgo(15));
-
     await getAllResults(payload, statusObj.Name, "daily_permits.json", base); // creates file
   }
 
