@@ -25,6 +25,7 @@ async function getDataByStatus(status) {
         .from(table)
         .select("record_id, record_number, data_hash")
         .eq("status", status) //status here
+        .eq("module_type", "Plan")
         .range(from, to);
 
       if (error) {
