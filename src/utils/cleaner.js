@@ -1,410 +1,123 @@
 const fs = require("fs").promises;
 const path = require("path");
 
-// Define the exact keys we want to extract for each section
-const REQUIRED_PERMIT_KEYS = [
-  "PermitId",
-  "PermitNumber",
-  "PermitType",
-  "PermitStatus",
-  "IssueDate",
-  "ExpireDate",
-  "FinalizeDate",
-  "ApplyDate",
-  "WorkClassName",
-  "Description",
-  "IVRNumber",
-  "MainAddress",
-  "MainParcelNumber",
-  "AssignedTo",
-  "AssignedToEmail",
-  "ProjectName",
-  "DistrictName",
-  "SquareFeet",
-  "Value",
-];
-
-const REQUIRED_ADDRESS_KEYS = [
-  "AddressLine1",
-  "AddressLine2",
-  "AddressLine3",
-  "City",
-  "State",
-  "County",
-  "Country",
-  "PostalCode",
-  "StreetType",
-];
-
-const REQUIRED_CONTACT_KEYS = [
-  "ContactTypeName",
-  "GlobalEntityName",
-  "FirstName",
-  "LastName",
-  "IsBilling",
-  "IsBillingDisplayText",
-  "Title",
-  "ContactStatus",
-];
-
-const REQUIRED_INSPECTION_KEYS = [
-  "InspectionId",
-  "InspectionType",
-  "InspectionTypeDescription",
-  "InspectionStatus",
-  "RequestedDate",
-  "ScheduledStartDate",
-  "PrimaryInspector",
-  "PrimaryInspectorEmail",
-  "IsReinspectionDisplayText",
-  "WorkflowActionId",
-  "InspectionNumber",
-];
-
-const REQUIRED_SUMMARY_KEYS = [
-  "Name",
-  "FriendlyName",
-  "ActivityType",
-  "ActivityTypeName",
-  "ActivityStatusName",
-  "CompletedOn",
-  "ScheduledStartDate",
-  "Status",
-];
-
 /**
- * Extracts required keys from an object. If a key is missing,
- * it sets the value to null and adds it to the missing log.
+ * Extracts a numeric value from the description text if the main Value field is 0 or null.
  */
-function safeExtract(sourceObj, keysList, contextPath, logList, fileName) {
-  const extracted = {};
+function extractValueFromDescription(value, description) {
+  if (value && value > 0) return value;
+  if (!description) return null;
 
-  // Check if sourceObj is a valid object (and not an array or null)
-  if (
-    typeof sourceObj !== "object" ||
-    sourceObj === null ||
-    Array.isArray(sourceObj)
-  ) {
-    logList.push(
-      `[${fileName}] ${contextPath} is completely missing or malformed.`,
-    );
-    keysList.forEach((key) => (extracted[key] = null));
-    return extracted;
+  const match = description.match(/\$([\d,]+(?:\.\d{2})?)/);
+  if (match && match[1]) {
+    return parseFloat(match[1].replace(/,/g, ""));
   }
-
-  keysList.forEach((key) => {
-    if (key in sourceObj && sourceObj[key] !== null && sourceObj[key] !== "") {
-      extracted[key] = sourceObj[key];
-    } else {
-      extracted[key] = null;
-      logList.push(`[${fileName}] Missing/Empty: ${contextPath}.${key}`);
-    }
-  });
-
-  return extracted;
+  return null;
 }
 
-async function cleanJsonFiles(inputFolder, outputFolder) {
-  try {
-    // Create output directory if it doesn't exist
-    await fs.mkdir(outputFolder, { recursive: true });
+/**
+ * Flattens and cleans raw Tyler API JSON into the Supabase schema.
+ */
+function cleanJsonObject(rawJson) {
+  // 1. Determine module type dynamically
+  const isPlan = !!rawJson.plan;
+  const moduleType = isPlan ? "Plan" : "Permit";
 
-    // Read directory and filter for .json files
-    const files = await fs.readdir(inputFolder);
-    const jsonFiles = files.filter((file) =>
-      file.toLowerCase().endsWith(".json"),
-    );
-    const totalFiles = jsonFiles.length;
+  // 2. Extract core payload
+  const coreData = isPlan
+    ? rawJson.plan?.Result || rawJson.plan || {}
+    : rawJson.permit?.Result || rawJson.permit || {};
 
-    console.log(`Starting extraction for ${totalFiles} files...\n`);
+  const addressInfo = coreData.MainAddressInfo || {};
 
-    const missingDataLog = [];
-    const fatalErrorLog = [];
-    let processedCount = 0;
+  // 3. Extract JSON Arrays
+  const contacts = rawJson.contacts?.Result || [];
+  const summary = rawJson.summary?.Result || [];
+  const inspections = rawJson.inspections?.Result || null;
+  const locations = rawJson.location?.Result || null;
 
-    for (const fileName of jsonFiles) {
-      const filepath = path.join(inputFolder, fileName);
-
-      try {
-        const rawData = await fs.readFile(filepath, "utf-8");
-        const data = JSON.parse(rawData);
-
-        const cleanedData = {};
-
-        // --- 1. PERMIT EXTRACTION ---
-        const permitSource = data.permit?.Result || {};
-        const cleanedPermit = safeExtract(
-          permitSource,
-          REQUIRED_PERMIT_KEYS,
-          "permit",
-          missingDataLog,
-          fileName,
-        );
-
-        const addressSource = permitSource.MainAddressInfo || {};
-        const cleanedAddress = safeExtract(
-          addressSource,
-          REQUIRED_ADDRESS_KEYS,
-          "permit.MainAddressInfo",
-          missingDataLog,
-          fileName,
-        );
-
-        cleanedPermit.MainAddressInfo = cleanedAddress;
-        cleanedData.permit = cleanedPermit;
-
-        // --- 2. CONTACTS EXTRACTION ---
-        const contactsSource = data.contacts || {};
-        cleanedData.contacts = {
-          TotalFound: contactsSource.TotalFound || 0,
-          Result: [],
-        };
-
-        const contactResults = contactsSource.Result;
-        if (Array.isArray(contactResults) && contactResults.length > 0) {
-          contactResults.forEach((contact, idx) => {
-            const cleanedContact = safeExtract(
-              contact,
-              REQUIRED_CONTACT_KEYS,
-              `contacts.Result[${idx}]`,
-              missingDataLog,
-              fileName,
-            );
-            cleanedData.contacts.Result.push(cleanedContact);
-          });
-        } else {
-          missingDataLog.push(
-            `[${fileName}] Missing/Empty: contacts.Result array`,
-          );
-        }
-
-        // --- 3. INSPECTIONS EXTRACTION ---
-        const inspectionsSource = data.inspections || {};
-        cleanedData.inspections = {
-          TotalFound: inspectionsSource.TotalFound || 0,
-          Result: [],
-        };
-
-        const inspectionResults = inspectionsSource.Result;
-        if (Array.isArray(inspectionResults) && inspectionResults.length > 0) {
-          inspectionResults.forEach((inspection, idx) => {
-            const cleanedInspection = safeExtract(
-              inspection,
-              REQUIRED_INSPECTION_KEYS,
-              `inspections.Result[${idx}]`,
-              missingDataLog,
-              fileName,
-            );
-            cleanedData.inspections.Result.push(cleanedInspection);
-          });
-        } else {
-          missingDataLog.push(
-            `[${fileName}] Missing/Empty: inspections.Result array`,
-          );
-        }
-
-        // --- 4. SUMMARY EXTRACTION ---
-        const summarySource = data.summary || {};
-        cleanedData.summary = { Result: [] };
-
-        const summaryResults = summarySource.Result;
-        if (Array.isArray(summaryResults) && summaryResults.length > 0) {
-          summaryResults.forEach((summaryItem, idx) => {
-            const cleanedSummary = safeExtract(
-              summaryItem,
-              REQUIRED_SUMMARY_KEYS,
-              `summary.Result[${idx}]`,
-              missingDataLog,
-              fileName,
-            );
-            cleanedData.summary.Result.push(cleanedSummary);
-          });
-        } else {
-          missingDataLog.push(
-            `[${fileName}] Missing/Empty: summary.Result array`,
-          );
-        }
-
-        // --- 5. SAVE CLEANED FILE ---
-        const outputFilepath = path.join(outputFolder, fileName);
-        await fs.writeFile(
-          outputFilepath,
-          JSON.stringify(cleanedData, null, 2),
-          "utf-8",
-        );
-
-        processedCount++;
-      } catch (e) {
-        // Catching specific errors and putting them in the fatal error log
-        if (e instanceof SyntaxError) {
-          fatalErrorLog.push(
-            `[${fileName}] JSON Decode Error (File might be empty or corrupted): ${e.message}`,
-          );
-        } else {
-          fatalErrorLog.push(`[${fileName}] Unexpected Error: ${e.message}`);
-        }
+  // 4. Build the all_parcel_numbers array
+  const parcelSet = new Set();
+  if (coreData.MainParcelNumber) {
+    parcelSet.add(coreData.MainParcelNumber);
+  }
+  if (locations && Array.isArray(locations)) {
+    locations.forEach((loc) => {
+      if (loc.Parcel && loc.Parcel.ParcelNumber) {
+        parcelSet.add(loc.Parcel.ParcelNumber);
       }
-    }
-
-    // --- Write the Enhanced Missing Data Log ---
-    const logFilepath = path.join(outputFolder, "missing_data_log.txt");
-    let logContent = `Extraction attempted for ${totalFiles} files.\n`;
-    logContent += `Successfully processed: ${processedCount}\n`;
-    logContent += `Totally failed files: ${fatalErrorLog.length}\n`;
-
-    // Write Fatal Errors
-    if (fatalErrorLog.length > 0) {
-      logContent += "\n" + "=".repeat(60) + "\n";
-      logContent += "CRITICAL FILE FAILURES (THESE FILES WERE SKIPPED)\n";
-      logContent += "=".repeat(60) + "\n\n";
-      logContent += fatalErrorLog.join("\n") + "\n";
-    }
-
-    logContent += "\n" + "=".repeat(60) + "\n";
-    logContent += "LOG OF MISSING REQUIRED FIELDS (FILES WERE PROCESSED)\n";
-    logContent += "=".repeat(60) + "\n\n";
-    logContent += missingDataLog.join("\n") + "\n";
-
-    await fs.writeFile(logFilepath, logContent, "utf-8");
-
-    // --- Terminal Output ---
-    console.log(
-      `\nCompleted! Processed ${processedCount} out of ${totalFiles} files.`,
-    );
-
-    // Explicitly print out the failed file in the terminal so you see it instantly
-    if (fatalErrorLog.length > 0) {
-      console.log(
-        "\n[WARNING] The following files encountered critical errors and were skipped:",
-      );
-      fatalErrorLog.forEach((error) => console.log(`  -> ${error}`));
-    }
-
-    console.log(`\nCleaned JSONs and logs saved in: ${outputFolder}`);
-  } catch (err) {
-    console.error("A critical error occurred initializing the script:", err);
+    });
   }
+  const allParcelNumbers = Array.from(parcelSet);
+
+  // 5. Build additional_details catch-all (specifically for plans)
+  let additionalDetails = null;
+  if (isPlan) {
+    additionalDetails = {
+      approval_expire_date: coreData.ApprovalExpireDate || null,
+      hold_exist: coreData.HoldExist || false,
+      hold_exist_on_inspection: coreData.HoldExistOnInspection || false,
+      unpaid_fees: coreData.UnPaidFees || false,
+      unpaid_invoiced_fees: coreData.UnPaidInvoicedFees || false,
+      failed_reviews: coreData.FailedReviews || false,
+      failed_inspections: coreData.FailedInspections || false,
+      e_review_enable: coreData.EReviewEnable || false,
+      is_e_review_case_type: coreData.IsEReviewCaseType || false,
+      project_id: coreData.ProjectId || null,
+      entity_holds: coreData.EntityHolds || null,
+    };
+  }
+
+  // 6. Construct the final flattened record
+  const formattedRecord = {
+    record_id: coreData.PlanId || coreData.PermitId || null,
+    record_number: coreData.PlanNumber || coreData.PermitNumber || null,
+    record_type: coreData.PlanType || coreData.PermitType || null,
+    status: coreData.PlanStatus || coreData.PermitStatus || null,
+    main_address: coreData.MainAddress || null,
+    job_value: extractValueFromDescription(
+      coreData.Value,
+      coreData.Description,
+    ),
+    apply_date: coreData.ApplyDate || null,
+    ivr_number: coreData.IVRNumber || null,
+    issue_date: coreData.IssueDate || rawJson.metadata?.IssueDate || null,
+    assigned_to: coreData.AssignedTo || null,
+    expire_date: coreData.ExpireDate || null,
+    square_feet: coreData.SquareFeet || null,
+    description: coreData.Description || null,
+    project_name: coreData.ProjectName || null,
+    district_name: coreData.DistrictName || null,
+    finalize_date: coreData.FinalizeDate || coreData.CompleteDate || null,
+    assigned_to_email: coreData.AssignedToEmail || null,
+    work_class_name: coreData.WorkClassName || coreData.PlanWorkClassId || null,
+    main_parcel_number: coreData.MainParcelNumber || null,
+
+    // Address Breakdown
+    city: addressInfo.City || null,
+    state: addressInfo.State || null,
+    county: addressInfo.County || null,
+    country: addressInfo.Country || null,
+    postal_code: addressInfo.PostalCode || null,
+    street_type: addressInfo.StreetType || null,
+    address_line_1: addressInfo.AddressLine1 || null,
+    address_line_2: addressInfo.AddressLine2 || null,
+    address_line_3: addressInfo.AddressLine3 || null,
+
+    // Nested JSON Payloads
+    contacts: contacts,
+    inspections: inspections,
+    summary: summary,
+    locations: locations,
+    all_parcel_numbers: allParcelNumbers,
+    additional_details: additionalDetails,
+
+    // System/Meta Fields
+    module_type: moduleType,
+    attachment: null, ///  attachmentUrl hard null for now
+  };
+
+  return formattedRecord;
 }
 
-// --- HOW TO USE ---
-// Use double backslashes for Windows paths in strings, or forward slashes.
-// const inputPath =
-//   "C:\\Users\\itsro\\OneDrive\\Desktop\\County Scrapers\\tyler.host\\permits";
-// const outputPath = "NEWcleaned\\";
-
-// cleanJsonFiles(inputPath, outputPath);
-
-/**
- * Cleans a single permit JSON object.
- *
- * @param {Object} inputJson - The parsed raw JSON object.
- * @param {String} fileName - The name of the file (used for logging missing fields).
- * @returns {Object} The cleaned JSON object.
- */
-function cleanJsonObject(inputJson, fileName) {
-  const missingDataLog = [];
-  const cleanedData = {};
-
-  try {
-    // --- 1. PERMIT EXTRACTION ---
-    const permitSource = inputJson.permit?.Result || {};
-    const cleanedPermit = safeExtract(
-      permitSource,
-      REQUIRED_PERMIT_KEYS,
-      "permit",
-      missingDataLog,
-      fileName,
-    );
-
-    const addressSource = permitSource.MainAddressInfo || {};
-    const cleanedAddress = safeExtract(
-      addressSource,
-      REQUIRED_ADDRESS_KEYS,
-      "permit.MainAddressInfo",
-      missingDataLog,
-      fileName,
-    );
-
-    cleanedPermit.MainAddressInfo = cleanedAddress;
-    cleanedData.permit = cleanedPermit;
-
-    // --- 2. CONTACTS EXTRACTION ---
-    const contactsSource = inputJson.contacts || {};
-    cleanedData.contacts = {
-      TotalFound: contactsSource.TotalFound || 0,
-      Result: [],
-    };
-
-    const contactResults = contactsSource.Result;
-    if (Array.isArray(contactResults) && contactResults.length > 0) {
-      contactResults.forEach((contact, idx) => {
-        const cleanedContact = safeExtract(
-          contact,
-          REQUIRED_CONTACT_KEYS,
-          `contacts.Result[${idx}]`,
-          missingDataLog,
-          fileName,
-        );
-        cleanedData.contacts.Result.push(cleanedContact);
-      });
-    } else {
-      missingDataLog.push(`[${fileName}] Missing/Empty: contacts.Result array`);
-    }
-
-    // --- 3. INSPECTIONS EXTRACTION ---
-    const inspectionsSource = inputJson.inspections || {};
-    cleanedData.inspections = {
-      TotalFound: inspectionsSource.TotalFound || 0,
-      Result: [],
-    };
-
-    const inspectionResults = inspectionsSource.Result;
-    if (Array.isArray(inspectionResults) && inspectionResults.length > 0) {
-      inspectionResults.forEach((inspection, idx) => {
-        const cleanedInspection = safeExtract(
-          inspection,
-          REQUIRED_INSPECTION_KEYS,
-          `inspections.Result[${idx}]`,
-          missingDataLog,
-          fileName,
-        );
-        cleanedData.inspections.Result.push(cleanedInspection);
-      });
-    } else {
-      missingDataLog.push(
-        `[${fileName}] Missing/Empty: inspections.Result array`,
-      );
-    }
-
-    // --- 4. SUMMARY EXTRACTION ---
-    const summarySource = inputJson.summary || {};
-    cleanedData.summary = { Result: [] };
-
-    const summaryResults = summarySource.Result;
-    if (Array.isArray(summaryResults) && summaryResults.length > 0) {
-      summaryResults.forEach((summaryItem, idx) => {
-        const cleanedSummary = safeExtract(
-          summaryItem,
-          REQUIRED_SUMMARY_KEYS,
-          `summary.Result[${idx}]`,
-          missingDataLog,
-          fileName,
-        );
-        cleanedData.summary.Result.push(cleanedSummary);
-      });
-    } else {
-      missingDataLog.push(`[${fileName}] Missing/Empty: summary.Result array`);
-    }
-
-    // Return the final cleaned object
-    return cleanedData;
-  } catch (e) {
-    console.error(
-      `\n[CRITICAL ERROR] Failed to process ${fileName}: ${e.message}`,
-    );
-    // Re-throw the error so your outer logic knows this specific file failed
-    throw e;
-  }
-}
-
-module.exports = { cleanJsonFiles, cleanJsonObject };
+module.exports = { cleanJsonObject };
