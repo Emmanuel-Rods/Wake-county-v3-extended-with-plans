@@ -36,26 +36,22 @@ async function uploadFolder(FOLDER_PATH) {
   let totalInserted = 0;
 
   try {
-    // Read files from the target directory
     const files = await fs.readdir(FOLDER_PATH);
     const jsonFiles = files.filter((f) => f.endsWith(".json"));
 
-    console.log(`Total files detected for processing: ${jsonFiles.length}`);
+    console.log(`Total files detected: ${jsonFiles.length}`);
 
     for (const filename of jsonFiles) {
-      const filePath = path.join(FOLDER_PATH, filename);
-
       try {
-        const fileContent = await fs.readFile(filePath, "utf-8");
+        const fileContent = await fs.readFile(
+          path.join(FOLDER_PATH, filename),
+          "utf-8",
+        );
         const rawJson = JSON.parse(fileContent);
 
-        const permit_hash = rawJson.permit_hash;
-        // --- 2. CLEAN PARSING ---
-        const permitBlock = rawJson.permit_data.permit || {};
+        const permitBlock = rawJson.permit_data || {};
 
-        const pId = permitBlock.PermitId;
-        const pNum = permitBlock.PermitNumber;
-        const status = permitBlock.PermitStatus;
+        const pId = permitBlock.PermitId || permitBlock.record_id;
 
         // Safety check: Skip files missing the key identifier
         if (!pId) {
@@ -65,22 +61,18 @@ async function uploadFolder(FOLDER_PATH) {
           continue;
         }
 
-        // --- 3. BUILD THE ROW ---
-        batch.push({
-          permit_id: pId,
-          permit_number: pNum ? pNum : "UNKNOWN",
-          status: status ? status : "UNKNOWN",
-          permit_data: rawJson.permit_data,
-          data_hash: permit_hash,
-        });
+        const schema = {
+          ...rawJson.permit_data,
+          data_hash: rawJson.permit_hash,
+        };
+
+        batch.push(schema);
       } catch (err) {
-        console.error(
-          `Error reading or parsing file ${filename}: ${err.message}`,
-        );
+        console.error(`Error reading ${filename}: ${err.message}`);
         continue;
       }
 
-      // --- 4. BATCH PUSH ---
+      // Batch Push
       if (batch.length >= BATCH_SIZE) {
         await pushToSupabase(batch);
         totalInserted += batch.length;
@@ -88,15 +80,15 @@ async function uploadFolder(FOLDER_PATH) {
       }
     }
 
-    // Push any remaining records
+    // Push remaining records
     if (batch.length > 0) {
       await pushToSupabase(batch);
       totalInserted += batch.length;
     }
 
-    console.log(`\n Upload complete. Total rows uploaded: ${totalInserted}`);
+    console.log(`\nUpload complete. Total rows uploaded: ${totalInserted}`);
   } catch (err) {
-    console.error(`Error accessing folder path: ${err.message}`);
+    console.error(`Error accessing folder: ${err.message}`);
   }
 }
 
